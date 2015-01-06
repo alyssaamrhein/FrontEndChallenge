@@ -1,18 +1,131 @@
-.songAndArtist {
-	padding: 1em;
+$main-font: 'Cabin', sans-serif;
+$bg-color: #EEEEEE;
+$main-color: #333;
+
+body {
+	color: $main-color;
+	font-family: $main-font;
+	background: $bg-color;
+}
+
+header {
+	ul {
+		padding: 0 2.25em;
+	}
+
+	li {
+		list-style-type: none;
+		font-size: 1.5em;
+		margin: 0 8%;
+	}
+
+	a{
+		text-decoration: none;
+	}
 }
 
 
+main {
+	margin: 0 auto;
+	width: 80%;
 
-@media screen and (min-width:40em) and (max-width: 60em){
-
+	h1{
+		padding: 0 .25em;
+	}
 }
 
-
-@media screen and (max-width: 40em){
-
+.container {
+	background-color: white;
+	border: 1px solid darken($bg-color, 10%);
+	display: inline-block;
+	margin: .5em;
+	padding: .5em 1em;
+	width: 95%;
+	
+	.rank {
+		display: inline-block;
+		float: left;
+		font-size: 2em;
+		margin: 0;
+		padding: .5em 0 .5em 2em;
+	}
+	
 	.songAndArtist {
-		
-	}	
+		display: inline-block;
+		float: left;
+		padding: 1.5em;
+		width: 80%;
 
+		.title {
+			display: inline-block;
+			font-size: 1.5em;
+			margin: 0;
+		}
+
+		.artist{
+			color: lighten($main-color, 25%);
+			display: inline-block;
+			margin: 0;
+			text-transform: uppercase;
+			word-wrap: break-word;
+		}
+	}
+}
+
+
+@media screen and (max-width: 60em){
+
+	
+	header {
+		
+		ul {
+			padding: 0 .5em;
+		}
+
+		li {
+			margin: 0;
+		}
+
+	}
+
+	main {
+		margin: 0 auto;
+		width: 99.9%;
+
+		h1{
+			font-size: 1.5em;
+			padding: 0 2%;
+		}
+	}
+
+	.container {
+		background-color: white;
+		margin: .5em;
+		padding: 0 1em;
+		width: 85%;
+
+		.rank {
+			display: inline-block;
+			float: left;
+			font-size: 3em;
+			margin: 0;
+			padding: .5em;
+		}
+		
+		.songAndArtist {
+			float: left;
+			padding: 1.75em 0;
+			max-width: 55%;
+
+			.title {
+				display: block;
+				font-size: 1.5em;
+			}
+
+			.artist{
+				display: block;
+			}
+
+		}
+	}
 }

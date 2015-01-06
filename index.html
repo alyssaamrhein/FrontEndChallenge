@@ -3,17 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Exzeo Test</title>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"> -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">WKBW<i class="fa fa-music"></i></a></li>
+			</ul>
+		</nav>
+	</header>
 	<main>
-		<p>List of songs no one should listen to:</p>
+		<h1>List of songs no one should listen to:</h1>
+		<button id="topTen">Top 10</button>
+		<button id="all100">All 100</button>
      	<div class="theTarget"></div>
 	</main>
 	<script id="theTemplate" type='text/template'>
-		<div class="songAndArtist">
-			<%= title %>
-    		<%= artist %>
+		<div class="container">
+			<p class="rank"><%= rank_this_week %></p>
+				<div class="songAndArtist">
+					<p class="title"><%= chart_item_title %></p>
+    				<p class="artist"><%= artist %></p>
+				</div>
+		</div>
+    </script>
+    <script id="topTenTemplate" type='text/template'>
+    	<div class="container">
+				<div class="songAndArtist">
+					<p class="title"><%= title %></p>
+    				<p class="artist"><%= artist %></p>
+				</div>
 		</div>
     </script>
 	<script src='bower_components/jquery/dist/jquery.js'></script>

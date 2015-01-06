@@ -1,4 +1,84 @@
-.songAndArtist {
-  padding: 1em; }
+body {
+  color: #333;
+  font-family: "Cabin", sans-serif;
+  background: #EEEEEE; }
+
+header ul {
+  padding: 0 2.25em; }
+header li {
+  list-style-type: none;
+  font-size: 1.5em;
+  margin: 0 8%; }
+header a {
+  text-decoration: none; }
+
+main {
+  margin: 0 auto;
+  width: 80%; }
+  main h1 {
+    padding: 0 .25em; }
+
+.container {
+  background-color: white;
+  border: 1px solid #d4d4d4;
+  display: inline-block;
+  margin: .5em;
+  padding: .5em 1em;
+  width: 95%; }
+  .container .rank {
+    display: inline-block;
+    float: left;
+    font-size: 2em;
+    margin: 0;
+    padding: .5em 0 .5em 2em; }
+  .container .songAndArtist {
+    display: inline-block;
+    float: left;
+    padding: 1.5em;
+    width: 80%; }
+    .container .songAndArtist .title {
+      display: inline-block;
+      font-size: 1.5em;
+      margin: 0; }
+    .container .songAndArtist .artist {
+      color: #737373;
+      display: inline-block;
+      margin: 0;
+      text-transform: uppercase;
+      word-wrap: break-word; }
+
+@media screen and (max-width: 60em) {
+  header ul {
+    padding: 0 .5em; }
+  header li {
+    margin: 0; }
+
+  main {
+    margin: 0 auto;
+    width: 99.9%; }
+    main h1 {
+      font-size: 1.5em;
+      padding: 0 2%; }
+
+  .container {
+    background-color: white;
+    margin: .5em;
+    padding: 0 1em;
+    width: 85%; }
+    .container .rank {
+      display: inline-block;
+      float: left;
+      font-size: 3em;
+      margin: 0;
+      padding: .5em; }
+    .container .songAndArtist {
+      float: left;
+      padding: 1.75em 0;
+      max-width: 55%; }
+      .container .songAndArtist .title {
+        display: block;
+        font-size: 1.5em; }
+      .container .songAndArtist .artist {
+        display: block; } }
 
 /*# sourceMappingURL=style.css.map */

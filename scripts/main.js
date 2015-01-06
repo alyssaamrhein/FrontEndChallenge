@@ -1511,25 +1511,56 @@ var data = {
 
 var songsArray = data.channel.songs;
 
-console.log(songsArray);
+$('#all100').click(function(){
 
 
-var eachingSongs = _.each(songsArray, function(e){
-    console.log(e.title);
-    return e.title;
-    return e.artist;
+    var eachingSongs = _.each(songsArray, function(e){
+        //console.log(e.chart_item_title);
+        return e.chart_item_title;
+        return e.artist;
+    });
+
+    var newTemplateString = document.getElementById('theTemplate').innerHTML;
+    var newTemplates = _.template(newTemplateString);
+
+    var newTemplates = _.map(songsArray, function (chart_item_title) {
+    return newTemplates(chart_item_title);
+     
+    });
+
+    var destination = document.querySelector('.theTarget');
+
+    destination.innerHTML = newTemplates.join('');
+
 });
 
-var newTemplateString = document.getElementById('theTemplate').innerHTML;
-var newTemplates = _.template(newTemplateString);
 
-var newTemplates = _.map(songsArray, function (title) {
-return newTemplates(title);
- 
+
+$('#topTen').click(function(){
+
+    console.log('you did it!');
+
+    var topTen = _.filter(songsArray, function(e){
+        return e.rank_this_week < 11;
+    });
+
+    console.log(topTen);
+
+    var topTenTitles = _.map(topTen, function(e){
+        return e.title;
+    });
+
+    console.log('topten titles is' + topTenTitles);
+
+
+    var newTemplateString = document.getElementById('topTenTemplate').innerHTML;
+    var newTemplates = _.template(newTemplateString);
+
+    var newTemplates = _.map(topTen, function (title) {
+        return newTemplates(title);
+    });
+
+    var destination = document.querySelector('.theTarget');
+
+    destination.innerHTML = newTemplates.join('');
 });
-
-var destination = document.querySelector('.theTarget');
-
-destination.innerHTML = newTemplates.join('');
-
-
