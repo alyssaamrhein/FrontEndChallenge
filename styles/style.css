@@ -124,21 +124,26 @@ main {
 @media screen and (max-width: 60em) {
   header {
     display: block;
-    padding: 1em; }
+    padding: 1em .25em; }
     header ul {
       padding: 0 .5em; }
     header li {
       margin: 0; }
     header nav {
       margin: 0; }
-    header button {
-      margin: 0 .25em; }
+    header .button-container {
+      margin: 0 3% 0 0; }
+      header .button-container button {
+        font-size: 1em;
+        margin: 0;
+        padding: .5em; }
 
   .big-picture {
     height: 400px; }
     .big-picture .text-background {
       background: rgba(0, 0, 0, 0.5);
-      padding: 2em;
+      padding: 1.25em;
+      padding-bottom: 2.75em;
       position: relative;
       top: 36px;
       right: 0;
@@ -150,14 +155,14 @@ main {
         margin: 0;
         position: relative;
         top: .5em;
-        width: 80%;
+        width: 90%;
         right: 0%; }
       .big-picture .text-background p {
         color: white;
         font-weight: lighter;
         margin: 0;
         padding-top: 1.5em;
-        padding-bottom: 0;
+        padding-bottom: 1em;
         position: relative;
         right: 1%;
         width: 86%; }

@@ -177,7 +177,7 @@ main {
 	
 	header {
 		display: block;
-		padding: 1em;
+		padding: 1em .25em;
 
 		ul {
 			padding: 0 .5em;
@@ -190,10 +190,15 @@ main {
 		nav {
 			margin: 0;
 		}
+		
+		.button-container {
+			margin: 0 3% 0 0;
 
-		button{
-			//float: none;
-			margin: 0 .25em;
+			button{
+				font-size: 1em;
+				margin: 0;
+				padding: .5em;
+			}
 		}
 
 	}
@@ -203,7 +208,8 @@ main {
 
 		.text-background {
 			background: rgba(0, 0, 0, 0.5);
-			padding: 2em;
+			padding: 1.25em;
+			padding-bottom: 2.75em;
 			position: relative;
 			top: 36px;
 			right: 0;
@@ -216,7 +222,7 @@ main {
 			margin: 0;
 			position: relative;
 			top: .5em;
-			width: 80%;
+			width: 90%;
 			right: 0%;
 			}
 
@@ -225,7 +231,7 @@ main {
 			font-weight: lighter;
 			margin: 0;
 			padding-top: 1.5em;
-			padding-bottom: 0;
+			padding-bottom: 1em;
 			position: relative;
 			right: 1%;
 			width: 86%;
