@@ -1,62 +1,126 @@
-/*
-Error: Invalid CSS after "			max-width: 60%": expected "{", was ";"
-        on line 149 of style.scss
+body {
+  background-color: #EEEEEE;
+  font-family: "Cabin", sans-serif;
+  padding: 0;
+  margin: 0; }
 
-144: 		
-145: 		.songAndArtist {
-146: 			float: left;
-147: 			padding: 1.75em 0;
-148: <<<<<<< HEAD
-149: 			max-width: 60%;
-150: 
-151: =======
-152: 			max-width: 55%;
-153: 			
-154: >>>>>>> master
+button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  float: right;
+  margin: 0 .25em;
+  padding: .5em .75em; }
+  button i {
+    padding: 0 .25em; }
+  button:focus {
+    outline: none; }
+  button:hover {
+    border: 1px solid #F7A21B;
+    color: #F7A21B; }
 
-Backtrace:
-style.scss:149
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1096:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:641:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:661:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:642:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:661:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:642:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:661:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:642:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:401:in `media_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:219:in `special_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:194:in `directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:660:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:42:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"			max-width: 60%\": expected \"{\", was \";\"\A         on line 149 of style.scss\A \A 144: 		\A 145: 		.songAndArtist {\A 146: 			float: left;\A 147: 			padding: 1.75em 0;\A 148: <<<<<<< HEAD\A 149: 			max-width: 60%;\A 150: \A 151: =======\A 152: 			max-width: 55%;\A 153: 			\A 154: >>>>>>> master"; }
+header {
+  background-color: #4D4A76;
+  padding: 2% 10% 2% 2%; }
+  header nav {
+    display: inline-block;
+    margin: 0 0 0 9%; }
+  header ul {
+    padding: 0;
+    margin: 0; }
+  header li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 0 8%; }
+  header a {
+    color: white;
+    text-decoration: none; }
+    header a:hover {
+      color: #EEEEEE; }
+  header .fa {
+    display: inline; }
+
+main {
+  color: #333;
+  margin: 0 auto;
+  padding: 2em;
+  width: 80%; }
+  main h1 {
+    padding: 0 .25em; }
+
+.container {
+  background-color: white;
+  border: 1px solid #d4d4d4;
+  display: inline-block;
+  margin: .5em;
+  padding: .5em 1em;
+  width: 95%; }
+  .container .rank {
+    display: inline-block;
+    float: left;
+    font-size: 2em;
+    margin: 0;
+    padding: .5em 0 .5em 2em; }
+  .container .songAndArtist {
+    display: inline-block;
+    float: left;
+    padding: 1.5em;
+    width: 80%; }
+    .container .songAndArtist .title {
+      display: inline-block;
+      font-size: 1.5em;
+      margin: 0; }
+    .container .songAndArtist .artist {
+      color: #737373;
+      display: inline-block;
+      margin: 0;
+      text-transform: uppercase;
+      word-wrap: break-word; }
+
+@media screen and (max-width: 60em) {
+  header {
+    display: block;
+    padding: 1em; }
+    header ul {
+      padding: 0 .5em; }
+    header li {
+      margin: 0; }
+    header nav {
+      margin: 0; }
+    header button {
+      margin: 0 .25em; }
+
+  main {
+    margin: 0 auto;
+    padding: .5em;
+    width: 99.9%; }
+    main h1 {
+      font-size: 1.5em;
+      padding: 0 5%; }
+
+  .container {
+    background-color: white;
+    margin: .5em;
+    padding: 0 1em;
+    width: 80%; }
+    .container .rank {
+      display: inline-block;
+      float: left;
+      font-size: 2em;
+      margin: 0;
+      padding: 1em .5em; }
+    .container .songAndArtist {
+      float: left;
+      padding: 1.75em 0;
+      max-width: 60%; }
+      .container .songAndArtist .title {
+        display: block;
+        font-size: 1.5em; }
+      .container .songAndArtist .artist {
+        display: block; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -13,9 +13,11 @@ button {
 	background-color: transparent;
 	border: 1px solid white;
 	border-radius: 6px;
+	color: white;
 	cursor: pointer;
 	font-size: 1em;
-	margin: 0 0 0 1em;
+	float: right;
+	margin: 0 .25em;
 	padding: .5em .75em;
 	
 	i {
@@ -25,11 +27,21 @@ button {
 	&:focus{
 		outline: none;
 	}
+
+	&:hover{
+		border: 1px solid #F7A21B;
+		color: #F7A21B;
+	}
 }
 
 header {
 	background-color: #4D4A76;
-	padding: 2em 2.25em;
+	padding: 2% 10% 2% 2%;
+	
+	nav {
+		display: inline-block;
+		margin: 0 0 0 9%;
+	}
 
 	ul {
 		padding:0;
@@ -38,6 +50,7 @@ header {
 
 	li {
 		list-style-type: none;
+		display: inline-block;
 		font-size: 1.5em;
 		margin: 0 8%;
 	}
@@ -49,6 +62,11 @@ header {
 			color: $bg-color;
 		}
 	}
+
+	.fa {
+		display: inline;
+	}
+
 }
 
 
@@ -106,13 +124,24 @@ main {
 
 	
 	header {
-		
+		display: block;
+		padding: 1em;
+
 		ul {
 			padding: 0 .5em;
 		}
 
 		li {
 			margin: 0;
+		}
+		
+		nav {
+			margin: 0;
+		}
+
+		button{
+			//float: none;
+			margin: 0 .25em;
 		}
 
 	}
@@ -145,13 +174,8 @@ main {
 		.songAndArtist {
 			float: left;
 			padding: 1.75em 0;
-<<<<<<< HEAD
 			max-width: 60%;
 
-=======
-			max-width: 55%;
-			
->>>>>>> master
 			.title {
 				display: block;
 				font-size: 1.5em;
