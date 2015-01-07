@@ -49,8 +49,8 @@ header {
       header .button-container button:focus {
         outline: none; }
       header .button-container button:hover {
-        border: 1px solid #F7A21B;
-        color: #F7A21B; }
+        border: 1px solid #FBB829;
+        color: #FBB829; }
 
 .big-picture {
   background: url("https://ununsplash.imgix.net/photo-1416339306562-f3d12fefd36f?q=75&fm=jpg&s=dd8bffcffb3d622bea05c74d203121c6") no-repeat center center fixed;
