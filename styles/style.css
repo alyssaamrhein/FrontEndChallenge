@@ -4,36 +4,24 @@ body {
   padding: 0;
   margin: 0; }
 
-button {
-  background-color: transparent;
-  border: 1px solid white;
-  border-radius: 6px;
-  color: white;
-  cursor: pointer;
-  font-size: 1em;
-  float: right;
-  margin: 0 .25em;
-  padding: .5em .75em; }
-  button i {
-    padding: 0 .25em; }
-  button:focus {
-    outline: none; }
-  button:hover {
-    border: 1px solid #F7A21B;
-    color: #F7A21B; }
-
 header {
   background-color: #4D4A76;
-  padding: 2% 10% 2% 2%; }
+  padding: 2% 10% 2% 2%;
+  position: fixed;
+  width: 100%;
+  z-index: 99; }
   header nav {
     display: inline-block;
     margin: 0 0 0 9%; }
+    header nav i {
+      padding: 0 .25em; }
   header ul {
     padding: 0;
     margin: 0; }
   header li {
     list-style-type: none;
     display: inline-block;
+    font-family: "Lobster", cursive;
     font-size: 1.5em;
     margin: 0 8%; }
   header a {
@@ -43,6 +31,58 @@ header {
       color: #EEEEEE; }
   header .fa {
     display: inline; }
+  header .button-container {
+    display: inline-block;
+    float: right;
+    margin: 0 10% 0 0; }
+    header .button-container button {
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+      font-size: 1em;
+      margin: 0 .25em;
+      padding: .5em .75em; }
+      header .button-container button i {
+        padding: 0 .25em; }
+      header .button-container button:focus {
+        outline: none; }
+      header .button-container button:hover {
+        border: 1px solid #F7A21B;
+        color: #F7A21B; }
+
+.big-picture {
+  background: url("https://ununsplash.imgix.net/photo-1416339306562-f3d12fefd36f?q=75&fm=jpg&s=dd8bffcffb3d622bea05c74d203121c6") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 400px; }
+  .big-picture .text-background {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    height: 300px;
+    position: relative;
+    top: 37px;
+    width: 100%; }
+    .big-picture .text-background h1 {
+      color: white;
+      font-family: "Lobster", cursive;
+      font-size: 3em;
+      height: 165px;
+      margin: 0;
+      position: relative;
+      top: 1em;
+      width: 50%;
+      right: -40%; }
+    .big-picture .text-background p {
+      color: white;
+      font-weight: lighter;
+      padding-bottom: 1em;
+      position: relative;
+      right: -40%;
+      width: 50%; }
 
 main {
   color: #333;
@@ -93,6 +133,34 @@ main {
       margin: 0; }
     header button {
       margin: 0 .25em; }
+
+  .big-picture {
+    height: 400px; }
+    .big-picture .text-background {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 2em;
+      position: relative;
+      top: 36px;
+      right: 0;
+      width: 100%; }
+      .big-picture .text-background h1 {
+        color: white;
+        font-size: 2.5em;
+        height: 157px;
+        margin: 0;
+        position: relative;
+        top: .5em;
+        width: 80%;
+        right: 0%; }
+      .big-picture .text-background p {
+        color: white;
+        font-weight: lighter;
+        margin: 0;
+        padding-top: 1.5em;
+        padding-bottom: 0;
+        position: relative;
+        right: 1%;
+        width: 86%; }
 
   main {
     margin: 0 auto;
