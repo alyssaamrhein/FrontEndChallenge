@@ -1,19 +1,42 @@
 body {
-  color: #333;
+  background-color: #EEEEEE;
   font-family: "Cabin", sans-serif;
-  background: #EEEEEE; }
+  padding: 0;
+  margin: 0; }
 
-header ul {
-  padding: 0 2.25em; }
-header li {
-  list-style-type: none;
-  font-size: 1.5em;
-  margin: 0 8%; }
-header a {
-  text-decoration: none; }
+button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 0 0 0 1em;
+  padding: .5em .75em; }
+  button i {
+    padding: 0 .25em; }
+  button:focus {
+    outline: none; }
+
+header {
+  background-color: #4D4A76;
+  padding: 2em 2.25em; }
+  header ul {
+    padding: 0;
+    margin: 0; }
+  header li {
+    list-style-type: none;
+    font-size: 1.5em;
+    margin: 0 8%; }
+  header a {
+    color: white;
+    text-decoration: none; }
+    header a:hover {
+      color: #EEEEEE; }
 
 main {
+  color: #333;
   margin: 0 auto;
+  padding: 2em;
   width: 80%; }
   main h1 {
     padding: 0 .25em; }
@@ -55,26 +78,27 @@ main {
 
   main {
     margin: 0 auto;
+    padding: .5em;
     width: 99.9%; }
     main h1 {
       font-size: 1.5em;
-      padding: 0 2%; }
+      padding: 0 5%; }
 
   .container {
     background-color: white;
     margin: .5em;
     padding: 0 1em;
-    width: 85%; }
+    width: 80%; }
     .container .rank {
       display: inline-block;
       float: left;
-      font-size: 3em;
+      font-size: 2em;
       margin: 0;
       padding: .5em; }
     .container .songAndArtist {
       float: left;
       padding: 1.75em 0;
-      max-width: 55%; }
+      max-width: 60%; }
       .container .songAndArtist .title {
         display: block;
         font-size: 1.5em; }

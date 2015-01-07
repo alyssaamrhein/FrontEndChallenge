@@ -3,14 +3,37 @@ $bg-color: #EEEEEE;
 $main-color: #333;
 
 body {
-	color: $main-color;
+	background-color: $bg-color;
 	font-family: $main-font;
-	background: $bg-color;
+	padding: 0;
+	margin: 0;	
+}
+
+button {
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1em;
+	margin: 0 0 0 1em;
+	padding: .5em .75em;
+	
+	i {
+		padding: 0 .25em;
+	}
+
+	&:focus{
+		outline: none;
+	}
 }
 
 header {
+	background-color: #4D4A76;
+	padding: 2em 2.25em;
+
 	ul {
-		padding: 0 2.25em;
+		padding:0;
+		margin: 0;
 	}
 
 	li {
@@ -19,14 +42,20 @@ header {
 		margin: 0 8%;
 	}
 
-	a{
+	a{	
+		color: white;
 		text-decoration: none;
+		&:hover {
+			color: $bg-color;
+		}
 	}
 }
 
 
 main {
+	color: $main-color;
 	margin: 0 auto;
+	padding: 2em;
 	width: 80%;
 
 	h1{
@@ -90,11 +119,12 @@ main {
 
 	main {
 		margin: 0 auto;
+		padding: .5em;
 		width: 99.9%;
 
 		h1{
 			font-size: 1.5em;
-			padding: 0 2%;
+			padding: 0 5%;
 		}
 	}
 
@@ -102,12 +132,12 @@ main {
 		background-color: white;
 		margin: .5em;
 		padding: 0 1em;
-		width: 85%;
+		width: 80%;
 
 		.rank {
 			display: inline-block;
 			float: left;
-			font-size: 3em;
+			font-size: 2em;
 			margin: 0;
 			padding: .5em;
 		}
@@ -115,7 +145,7 @@ main {
 		.songAndArtist {
 			float: left;
 			padding: 1.75em 0;
-			max-width: 55%;
+			max-width: 60%;
 
 			.title {
 				display: block;
